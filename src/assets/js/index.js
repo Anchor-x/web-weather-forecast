@@ -1,4 +1,4 @@
-const myChart = echarts.init(document.getElementById("main"));
+var myChart = echarts.init(document.getElementById("main"));
 var data = [
     {name: '海门', value: 9},
     {name: '鄂尔多斯', value: 12},

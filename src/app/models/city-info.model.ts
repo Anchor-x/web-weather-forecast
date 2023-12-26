@@ -8,6 +8,7 @@ export interface CityInfo {
     code: string;
     location: Location[];
     refer: Refer;
+
     [property: string]: any;
 }
 
@@ -64,6 +65,7 @@ export interface Location {
      * 地区/城市目前与UTC时间偏移的小时数
      */
     utcOffset?: string;
+
     [property: string]: any;
 }
 
@@ -76,5 +78,6 @@ export interface Refer {
      * 原始数据来源，或数据源说明，可能为空
      */
     sources: Array<null | string>;
+
     [property: string]: any;
 }

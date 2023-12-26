@@ -5,5 +5,5 @@ import { routes } from './app.routes';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideNoopAnimations()]
+    providers: [provideRouter(routes), provideNoopAnimations()]
 };

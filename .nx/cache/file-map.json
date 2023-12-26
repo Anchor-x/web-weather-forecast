@@ -15,8 +15,6 @@
     "@nrwl/angular": "^17.2.7",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.2",
-    "echarts": "^5.4.3",
-    "ngx-echarts": "^17.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2",
@@ -74,11 +72,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "5736552172503878112"
+          "hash": "8064167394149596975"
         },
         {
           "file": "package.json",
-          "hash": "336403312373063227",
+          "hash": "168639022375434330",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/cdk",
@@ -93,8 +91,6 @@
             "npm:@nrwl/angular",
             "npm:@popperjs/core",
             "npm:bootstrap",
-            "npm:echarts",
-            "npm:ngx-echarts",
             "npm:rxjs",
             "npm:tslib",
             "npm:zone.js",
@@ -116,7 +112,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "1490900958471093078"
+          "hash": "3626686092416962079"
         },
         {
           "file": "src/app/app.component.scss",
@@ -131,7 +127,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "14010351837181657898",
+          "hash": "1640810341955586069",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -155,267 +151,8 @@
           ]
         },
         {
-          "file": "src/app/map/map.component.html",
-          "hash": "15357907097956475810"
-        },
-        {
-          "file": "src/app/map/map.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/app/map/map.component.spec.ts",
-          "hash": "2867239930979284804",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "src/app/map/map.component.ts",
-          "hash": "17978088914720273098",
-          "deps": [
-            "npm:@angular/core",
-            "npm:ngx-echarts",
-            "npm:echarts"
-          ]
-        },
-        {
           "file": "src/assets/.gitkeep",
           "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/assets/js/Anhui.js",
-          "hash": "9431804858659556445",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Beijing.js",
-          "hash": "5586979175161488602",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/China.js",
-          "hash": "17719622981278750878",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Chongqing.js",
-          "hash": "10883328219154035443",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Fujian.js",
-          "hash": "4305210670305354375",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Gansu.js",
-          "hash": "15798975703022120855",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Guangdong.js",
-          "hash": "2521356163955227553",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Guangxi.js",
-          "hash": "11345130835338737725",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Guizhou.js",
-          "hash": "65184887864284527",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Hainan.js",
-          "hash": "18093302846120651439",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Hebei.js",
-          "hash": "1806579925329479031",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Heilongjiang.js",
-          "hash": "9650646328386252181",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Henan.js",
-          "hash": "8686782088866560466",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Hubei.js",
-          "hash": "9999634320338947438",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Hunan.js",
-          "hash": "8746831010218426053",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Jiangsu.js",
-          "hash": "655478416638812412",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Jiangxi.js",
-          "hash": "5284847116842930973",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Jilin.js",
-          "hash": "5379360559158036359",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Liaoning.js",
-          "hash": "863152157741534407",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Neimenggu.js",
-          "hash": "7454112463352510750",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Ningxia.js",
-          "hash": "5197258324699582853",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Qinghai.js",
-          "hash": "3116129664447329913",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Shaanxi.js",
-          "hash": "6824001604988870412",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Shandong.js",
-          "hash": "4367656791016958181",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Shanghai.js",
-          "hash": "4318175183011076291",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Shanxi.js",
-          "hash": "1790308519494323066",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Sichuan.js",
-          "hash": "165795633281382952",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Taiwan.js",
-          "hash": "1653249685357024735",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Tianjin.js",
-          "hash": "6086647691990273960",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Xinjiang.js",
-          "hash": "3717740296580392179",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Xizang.js",
-          "hash": "251912464279970201",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Yunnan.js",
-          "hash": "10223255000259021555",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Zhejiang.js",
-          "hash": "13131759243619737585",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/pMap.ts",
-          "hash": "10264492306436413017"
         },
         {
           "file": "src/favicon.ico",
@@ -423,7 +160,11 @@
         },
         {
           "file": "src/index.html",
-          "hash": "11526772966656318697"
+          "hash": "3096479245305937721"
+        },
+        {
+          "file": "src/input.css",
+          "hash": "2866083945719690482"
         },
         {
           "file": "src/main.ts",
@@ -434,7 +175,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "2866083945719690482"
+          "hash": "224254970960399293"
         },
         {
           "file": "tailwind.config.js",
@@ -446,7 +187,7 @@
         },
         {
           "file": "tsconfig.json",
-          "hash": "10669062551546724326"
+          "hash": "8074232012119176151"
         },
         {
           "file": "tsconfig.spec.json",

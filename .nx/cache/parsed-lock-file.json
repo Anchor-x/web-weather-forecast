@@ -6462,33 +6462,6 @@
         "hash": "sha512-2GSFtnnC6U4IEKhEI7+PvdxrmjJ04mdsj3wHZTFiw0tUtG4HCWzTr13ZYTk8XOGnA1xQMaDljoBOYlk3D/MMSw=="
       }
     },
-    "npm:echarts": {
-      "type": "npm",
-      "name": "npm:echarts",
-      "data": {
-        "version": "5.4.3",
-        "packageName": "echarts",
-        "hash": "sha512-mYKxLxhzy6zyTi/FaEbJMOZU1ULGEQHaeIeuMR5L+JnJTpz+YR03mnnpBhbR4+UYJAgiXgpyTVLffPAjOTLkZA=="
-      }
-    },
-    "npm:tslib@2.3.0": {
-      "type": "npm",
-      "name": "npm:tslib@2.3.0",
-      "data": {
-        "version": "2.3.0",
-        "packageName": "tslib",
-        "hash": "sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg=="
-      }
-    },
-    "npm:tslib": {
-      "type": "npm",
-      "name": "npm:tslib",
-      "data": {
-        "version": "2.6.2",
-        "packageName": "tslib",
-        "hash": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
-      }
-    },
     "npm:ee-first": {
       "type": "npm",
       "name": "npm:ee-first",
@@ -9270,15 +9243,6 @@
         "hash": "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
       }
     },
-    "npm:ngx-echarts": {
-      "type": "npm",
-      "name": "npm:ngx-echarts",
-      "data": {
-        "version": "17.1.0",
-        "packageName": "ngx-echarts",
-        "hash": "sha512-DSNF/aKmJSxJWb9UwPUgNtY8Ma9SmViDBRacvAwpakc/5mJerunxndDgoBQkYk5JFKAjXX6bp4ZWLRKL3/5AGA=="
-      }
-    },
     "npm:nice-napi": {
       "type": "npm",
       "name": "npm:nice-napi",
@@ -11295,6 +11259,15 @@
         "hash": "sha512-fw/7265mIWukrSHd0i+wSwx64kYUSAKPfxRDksjKIYTxSAp9W9/xcZVBF4Kl0eqQd5eBpAQ/oQrc5RyM/0c1GQ=="
       }
     },
+    "npm:tslib": {
+      "type": "npm",
+      "name": "npm:tslib",
+      "data": {
+        "version": "2.6.2",
+        "packageName": "tslib",
+        "hash": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
+      }
+    },
     "npm:tuf-js": {
       "type": "npm",
       "name": "npm:tuf-js",
@@ -11779,15 +11752,6 @@
         "version": "0.14.2",
         "packageName": "zone.js",
         "hash": "sha512-X4U7J1isDhoOmHmFWiLhloWc2lzMkdnumtfQ1LXzf/IOZp5NQYuMUTaviVzG/q1ugMBIXzin2AqeVJUoSEkNyQ=="
-      }
-    },
-    "npm:zrender": {
-      "type": "npm",
-      "name": "npm:zrender",
-      "data": {
-        "version": "5.4.4",
-        "packageName": "zrender",
-        "hash": "sha512-0VxCNJ7AGOMCWeHVyTrGzUgrK4asT4ml9PEkeGirAkKNYXYzoPJCLvmyfdoOXcjTHPs10OZVMfD1Rwg16AZyYw=="
       }
     }
   },
@@ -21848,16 +21812,6 @@
       "type": "static"
     },
     {
-      "source": "npm:echarts",
-      "target": "npm:tslib@2.3.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:echarts",
-      "target": "npm:zrender",
-      "type": "static"
-    },
-    {
       "source": "npm:ejs",
       "target": "npm:jake",
       "type": "static"
@@ -26123,16 +26077,6 @@
       "type": "static"
     },
     {
-      "source": "npm:ngx-echarts",
-      "target": "npm:echarts",
-      "type": "static"
-    },
-    {
-      "source": "npm:ngx-echarts",
-      "target": "npm:tslib",
-      "type": "static"
-    },
-    {
       "source": "npm:nice-napi",
       "target": "npm:node-addon-api",
       "type": "static"
@@ -30020,11 +29964,6 @@
     {
       "source": "npm:zone.js",
       "target": "npm:tslib",
-      "type": "static"
-    },
-    {
-      "source": "npm:zrender",
-      "target": "npm:tslib@2.3.0",
       "type": "static"
     }
   ]

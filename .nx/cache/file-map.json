@@ -15,6 +15,8 @@
     "@nrwl/angular": "^17.2.7",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.2",
+    "echarts": "^5.4.3",
+    "ngx-echarts": "^17.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2",
@@ -72,11 +74,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "8064167394149596975"
+          "hash": "5736552172503878112"
         },
         {
           "file": "package.json",
-          "hash": "168639022375434330",
+          "hash": "336403312373063227",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/cdk",
@@ -91,6 +93,8 @@
             "npm:@nrwl/angular",
             "npm:@popperjs/core",
             "npm:bootstrap",
+            "npm:echarts",
+            "npm:ngx-echarts",
             "npm:rxjs",
             "npm:tslib",
             "npm:zone.js",
@@ -112,7 +116,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "3626686092416962079"
+          "hash": "1490900958471093078"
         },
         {
           "file": "src/app/app.component.scss",
@@ -127,7 +131,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "1640810341955586069",
+          "hash": "14010351837181657898",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -151,8 +155,36 @@
           ]
         },
         {
+          "file": "src/app/map/map.component.html",
+          "hash": "15357907097956475810"
+        },
+        {
+          "file": "src/app/map/map.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/map/map.component.spec.ts",
+          "hash": "2867239930979284804",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/map/map.component.ts",
+          "hash": "18312805735853884348",
+          "deps": [
+            "npm:@angular/core",
+            "npm:ngx-echarts",
+            "npm:echarts"
+          ]
+        },
+        {
           "file": "src/assets/.gitkeep",
           "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/js/index.js",
+          "hash": "7261729770673511662"
         },
         {
           "file": "src/favicon.ico",
@@ -160,11 +192,7 @@
         },
         {
           "file": "src/index.html",
-          "hash": "3096479245305937721"
-        },
-        {
-          "file": "src/input.css",
-          "hash": "2866083945719690482"
+          "hash": "11526772966656318697"
         },
         {
           "file": "src/main.ts",
@@ -175,7 +203,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "224254970960399293"
+          "hash": "2866083945719690482"
         },
         {
           "file": "tailwind.config.js",

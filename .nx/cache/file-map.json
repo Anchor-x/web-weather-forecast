@@ -171,7 +171,7 @@
         },
         {
           "file": "src/app/map/map.component.ts",
-          "hash": "4717798411875946613",
+          "hash": "1249784909874140026",
           "deps": [
             "npm:@angular/core",
             "npm:ngx-echarts",
@@ -183,16 +183,235 @@
           "hash": "3244421341483603138"
         },
         {
+          "file": "src/assets/js/Anhui.js",
+          "hash": "9431804858659556445",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Beijing.js",
+          "hash": "5586979175161488602",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/China.js",
+          "hash": "17719622981278750878",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
           "file": "src/assets/js/Chongqing.js",
-          "hash": "14188921719829000634"
+          "hash": "10883328219154035443",
+          "deps": [
+            "npm:echarts"
+          ]
         },
         {
-          "file": "src/assets/js/index.js",
-          "hash": "7261729770673511662"
+          "file": "src/assets/js/Fujian.js",
+          "hash": "4305210670305354375",
+          "deps": [
+            "npm:echarts"
+          ]
         },
         {
-          "file": "src/assets/js/重庆市.json",
-          "hash": "5282048478564145325"
+          "file": "src/assets/js/Gansu.js",
+          "hash": "15798975703022120855",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Guangdong.js",
+          "hash": "2521356163955227553",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Guangxi.js",
+          "hash": "11345130835338737725",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Guizhou.js",
+          "hash": "65184887864284527",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Hainan.js",
+          "hash": "18093302846120651439",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Hebei.js",
+          "hash": "1806579925329479031",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Heilongjiang.js",
+          "hash": "9650646328386252181",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Henan.js",
+          "hash": "8686782088866560466",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Hubei.js",
+          "hash": "9999634320338947438",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Hunan.js",
+          "hash": "8746831010218426053",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Jiangsu.js",
+          "hash": "655478416638812412",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Jiangxi.js",
+          "hash": "5284847116842930973",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Jilin.js",
+          "hash": "5379360559158036359",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Liaoning.js",
+          "hash": "863152157741534407",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Neimenggu.js",
+          "hash": "7454112463352510750",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Ningxia.js",
+          "hash": "5197258324699582853",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Qinghai.js",
+          "hash": "3116129664447329913",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Shandong.js",
+          "hash": "4367656791016958181",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Shanghai.js",
+          "hash": "4318175183011076291",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Shanx.js",
+          "hash": "6824001604988870412",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Shanxi.js",
+          "hash": "1790308519494323066",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Sichuan.js",
+          "hash": "165795633281382952",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Taiwan.js",
+          "hash": "1653249685357024735",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Tianjin.js",
+          "hash": "6086647691990273960",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Xinjiang.js",
+          "hash": "3717740296580392179",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Xizang.js",
+          "hash": "251912464279970201",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Yunnan.js",
+          "hash": "10223255000259021555",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
+          "file": "src/assets/js/Zhejiang.js",
+          "hash": "13131759243619737585",
+          "deps": [
+            "npm:echarts"
+          ]
         },
         {
           "file": "src/favicon.ico",
@@ -223,7 +442,7 @@
         },
         {
           "file": "tsconfig.json",
-          "hash": "8074232012119176151"
+          "hash": "10669062551546724326"
         },
         {
           "file": "tsconfig.spec.json",

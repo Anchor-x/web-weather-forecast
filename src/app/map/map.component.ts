@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { NgxEchartsModule } from 'ngx-echarts';
+import {NgxEchartsModule} from 'ngx-echarts';
 import * as echarts from 'echarts';
 import * as China from "../../assets/js/China"
 import * as Anhui from "../../assets/js/Anhui"
@@ -25,7 +25,7 @@ import * as Ningxia from "../../assets/js/Ningxia"
 import * as Qinghai from "../../assets/js/Qinghai"
 import * as Shandong from "../../assets/js/Shandong"
 import * as Shanghai from "../../assets/js/Shanghai"
-import * as Shanx from "../../assets/js/Shanx"
+import * as Shaanxi from "../../assets/js/Shaanxi"
 import * as Shanxi from "../../assets/js/Shanxi"
 import * as Sichuan from "../../assets/js/Sichuan"
 import * as Taiwan from "../../assets/js/Taiwan"
@@ -34,114 +34,152 @@ import * as Xinjiang from "../../assets/js/Xinjiang"
 import * as Xizang from "../../assets/js/Xizang"
 import * as Yunnan from "../../assets/js/Yunnan"
 import * as Zhejiang from "../../assets/js/Zhejiang"
+import * as p from "../../assets/js/pMap"
+
+const Province = [
+    Beijing,
+    Shanghai,
+    Tianjin,
+    Chongqing,
+    Hebei,
+    Shanxi,
+    Liaoning,
+    Jilin,
+    Heilongjiang,
+    Jiangsu,
+    Zhejiang,
+    Anhui,
+    Fujian,
+    Jiangxi,
+    Shandong,
+    Henan,
+    Hubei,
+    Hunan,
+    Guangdong,
+    Hainan,
+    Sichuan,
+    Guizhou,
+    Yunnan,
+    Shaanxi,
+    Gansu,
+    Qinghai,
+    Taiwan,
+    Neimenggu,
+    Guangxi,
+    Xizang,
+    Ningxia,
+    Xinjiang
+]
 
 @Component({
-  selector: 'app-map',
-  standalone: true,
-  imports: [
-    NgxEchartsModule
-  ],
-  templateUrl: './map.component.html',
-  styleUrl: './map.component.scss'
+    selector: 'app-map',
+    standalone: true,
+    imports: [
+        NgxEchartsModule
+    ],
+    templateUrl: './map.component.html',
+    styleUrl: './map.component.scss'
 })
-export class MapComponent implements OnInit{
-  ngOnInit() {
-    China.init()
-    Beijing.init()
-    Tianjin.init()
-    Hebei.init()
-    Shanxi.init()
-    Neimenggu.init()
-    Liaoning.init()
-    Jilin.init()
-    Heilongjiang.init()
-    Shanghai.init()
-    Jiangsu.init()
-    Zhejiang.init()
-    Anhui.init()
-    Fujian.init()
-    Jiangxi.init()
-    Shandong.init()
-    Henan.init()
-    Hubei.init()
-    Hunan.init()
-    Guangdong.init()
-    Guangxi.init()
-    Hainan.init()
-    Chongqing.init()
-    Sichuan.init()
-    Guizhou.init()
-    Yunnan.init()
-    Xizang.init()
-    Shanx.init()
-    Gansu.init()
-    Qinghai.init()
-    Ningxia.init()
-    Xinjiang.init()
-    Fujian.init()
-    Taiwan.init()
-    this.initChart();
-  }
-  initChart() {
-    const chartDom= document.getElementById('chinaMap');
-    const myChart= echarts.init(chartDom);
-    let option;
-    option = {
-      title : {
-      },
-      tooltip: {},
-      legend: {
-      },
-      geo: {
-        map: 'china',
-        show: true,
-        roam:false,
-        zoom:1,
-        emphasis:{
-          label:{
-            show:false
-          }
-        },
-        itemStyle: {
-          areaColor: '#FFDAB9',
-          borderColor: '#FFE4E1',
-          shadowColor: '#FF6A6A',
-          shadowBlur: 10
-        }
-      },
-      series: [
-      ]
+export class MapComponent implements OnInit {
+    ngOnInit() {
+        China.init()
+        // // Beijing.init()
+        // Tianjin.init()
+        // Hebei.init()
+        // Shanxi.init()
+        // Neimenggu.init()
+        // Liaoning.init()
+        // Jilin.init()
+        // Heilongjiang.init()
+        // Shanghai.init()
+        // Jiangsu.init()
+        // Zhejiang.init()
+        // Anhui.init()
+        // Fujian.init()
+        // Jiangxi.init()
+        // Shandong.init()
+        // Henan.init()
+        // Hubei.init()
+        // Hunan.init()
+        // Guangdong.init()
+        // Guangxi.init()
+        // Hainan.init()
+        // Chongqing.init()
+        // Sichuan.init()
+        // Guizhou.init()
+        // Yunnan.init()
+        // Xizang.init()
+        // Shaanxi.init()
+        // Gansu.init()
+        // Qinghai.init()
+        // Ningxia.init()
+        // Xinjiang.init()
+        // Fujian.init()
+        // Taiwan.init()
+        this.initChart();
     };
 
-    myChart.on('click',function(param){
-      console.log(param);
-      myChart.setOption( {
-        title : {
-        },
-        tooltip: {},
-        legend: {
-        },
-        geo: {
-          map: param.name,
-          show: true,
-          roam:false,
-          zoom:1,
-          emphasis:{
-            label:{
-              show:false
+
+    initChart() {
+        const chartDom = document.getElementById('chinaMap');
+        const myChart = echarts.init(chartDom);
+        let option;
+        option = {
+            title: {},
+            tooltip: {},
+            legend: {},
+            geo: {
+                map: 'china',
+                show: true,
+                roam: false,
+                zoom: 1,
+                emphasis: {
+                    label: {
+                        show: false
+                    }
+                },
+                itemStyle: {
+                    areaColor: '#FFDAB9',
+                    borderColor: '#FFE4E1',
+                    shadowColor: '#FF6A6A',
+                    shadowBlur: 10
+                }
+            },
+            series: []
+        };
+
+        myChart.on('click', function (param) {
+            console.log(param);
+            if (p.pMap.has(param.name)) {
+                // @ts-ignore
+                let index: number = p.pMap.get(param.name);
+                Province[index].init();
+                myChart.setOption({
+                    title: {},
+                    tooltip: {},
+                    legend: {},
+                    geo: {
+                        map: param.name,
+                        show: true,
+                        roam: false,
+                        zoom: 1,
+                        emphasis: {
+                            label: {
+                                show: false
+                            }
+                        },
+                        itemStyle: {
+                            areaColor: '#FFDAB9',
+                            borderColor: '#FFE4E1',
+                            shadowColor: '#FF6A6A',
+                            shadowBlur: 10
+                        }
+                    },
+                    series: []
+                })
             }
-          },
-          itemStyle: {
-            areaColor: '#FFDAB9',
-            borderColor: '#FFE4E1',
-            shadowColor: '#FF6A6A',
-            shadowBlur: 10
-          }
-        },
-        series: [
-        ]
-      })
-    })
-    option && myChart.setOption(option);
-  }
+
+        })
+        option && myChart.setOption(option);
+    }
 }

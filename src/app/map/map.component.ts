@@ -83,42 +83,36 @@ const Province = [
 export class MapComponent implements OnInit {
     ngOnInit() {
         China.init()
-        // // Beijing.init()
-        // Tianjin.init()
-        // Hebei.init()
-        // Shanxi.init()
-        // Neimenggu.init()
-        // Liaoning.init()
-        // Jilin.init()
-        // Heilongjiang.init()
-        // Shanghai.init()
-        // Jiangsu.init()
-        // Zhejiang.init()
-        // Anhui.init()
-        // Fujian.init()
-        // Jiangxi.init()
-        // Shandong.init()
-        // Henan.init()
-        // Hubei.init()
-        // Hunan.init()
-        // Guangdong.init()
-        // Guangxi.init()
-        // Hainan.init()
-        // Chongqing.init()
-        // Sichuan.init()
-        // Guizhou.init()
-        // Yunnan.init()
-        // Xizang.init()
-        // Shaanxi.init()
-        // Gansu.init()
-        // Qinghai.init()
-        // Ningxia.init()
-        // Xinjiang.init()
-        // Fujian.init()
-        // Taiwan.init()
         this.initChart();
     };
 
+    back(){
+      const chartDom = document.getElementById('chinaMap');
+      const myChart = echarts.init(chartDom);
+      myChart.setOption({
+        title: {},
+        tooltip: {},
+        legend: {},
+        geo: {
+          map: 'china',
+          show: true,
+          roam: false,
+          zoom: 1,
+          emphasis: {
+            label: {
+              show: false
+            }
+          },
+          itemStyle: {
+            areaColor: '#FFDAB9',
+            borderColor: '#FFE4E1',
+            shadowColor: '#FF6A6A',
+            shadowBlur: 10
+          }
+        },
+        series: []
+      })
+    }
 
     initChart() {
         const chartDom = document.getElementById('chinaMap');

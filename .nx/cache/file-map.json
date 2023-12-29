@@ -171,7 +171,7 @@
         },
         {
           "file": "src/app/map/map.component.ts",
-          "hash": "1249784909874140026",
+          "hash": "17978088914720273098",
           "deps": [
             "npm:@angular/core",
             "npm:ngx-echarts",
@@ -337,6 +337,13 @@
           ]
         },
         {
+          "file": "src/assets/js/Shaanxi.js",
+          "hash": "6824001604988870412",
+          "deps": [
+            "npm:echarts"
+          ]
+        },
+        {
           "file": "src/assets/js/Shandong.js",
           "hash": "4367656791016958181",
           "deps": [
@@ -346,13 +353,6 @@
         {
           "file": "src/assets/js/Shanghai.js",
           "hash": "4318175183011076291",
-          "deps": [
-            "npm:echarts"
-          ]
-        },
-        {
-          "file": "src/assets/js/Shanx.js",
-          "hash": "6824001604988870412",
           "deps": [
             "npm:echarts"
           ]
@@ -412,6 +412,10 @@
           "deps": [
             "npm:echarts"
           ]
+        },
+        {
+          "file": "src/assets/js/pMap.ts",
+          "hash": "10264492306436413017"
         },
         {
           "file": "src/favicon.ico",

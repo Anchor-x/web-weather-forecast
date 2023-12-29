@@ -171,7 +171,7 @@
         },
         {
           "file": "src/app/map/map.component.ts",
-          "hash": "18312805735853884348",
+          "hash": "4717798411875946613",
           "deps": [
             "npm:@angular/core",
             "npm:ngx-echarts",
@@ -183,8 +183,16 @@
           "hash": "3244421341483603138"
         },
         {
+          "file": "src/assets/js/Chongqing.js",
+          "hash": "14188921719829000634"
+        },
+        {
           "file": "src/assets/js/index.js",
           "hash": "7261729770673511662"
+        },
+        {
+          "file": "src/assets/js/重庆市.json",
+          "hash": "5282048478564145325"
         },
         {
           "file": "src/favicon.ico",

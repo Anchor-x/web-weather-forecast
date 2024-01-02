@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MapComponent } from "./map/map.component";
-import { BlockComponent } from "./block/block.component";
+import { MapComponent } from "./components/map/map.component";
+import { BlockComponent } from "./components/block/block.component";
 import { WeatherSearchComponent } from "./components/weather-search/weather-search.component";
 
 @Component({

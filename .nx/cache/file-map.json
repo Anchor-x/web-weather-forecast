@@ -156,7 +156,7 @@
         },
         {
           "file": "src/app/map/map.component.html",
-          "hash": "13835901745088157007"
+          "hash": "10764252526559000522"
         },
         {
           "file": "src/app/map/map.component.scss",
@@ -171,7 +171,7 @@
         },
         {
           "file": "src/app/map/map.component.ts",
-          "hash": "9339753810624013986",
+          "hash": "13017537802764184612",
           "deps": [
             "npm:@angular/core",
             "npm:ngx-echarts",

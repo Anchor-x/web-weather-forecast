@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CitySearchService } from "../../services/city-search.service";
+import { CityInfo } from "../../models/city-info.model";
+import { WeatherInfo } from "../../models/weather-info.model";
+import { WeatherSearchService } from "../../services/weather-search.service";
 
 @Component({
     selector: 'app-weather-search',
@@ -9,16 +12,83 @@ import { CitySearchService } from "../../services/city-search.service";
     styleUrl: './weather-search.component.scss'
 })
 export class WeatherSearchComponent implements OnInit {
-    CountyId: string = '';
-
     ngOnInit(): void {
     }
 
-    constructor(private service: CitySearchService) {
+    /**
+     * 构造函数
+     * @param citySearchService - 城市搜索服务
+     * @param weatherSearchService - 天气搜索服务
+     */
+    constructor(private citySearchService: CitySearchService,
+                private weatherSearchService: WeatherSearchService) {
     }
 
-    // Get the county id from the service
-    // getCountyId(city: string, adm: string, county: string): void {
-    //     this.CountyId = this.service.getCountyId(city, adm, county);
-    // }
+    // 城市信息
+    cityInfo: CityInfo = {
+        code: '',
+        location: [{
+            id: '',
+            name: '',
+            adm1: '',
+            adm2: '',
+            country: '',
+            tz: '',
+            utcOffset: '',
+            isDst: '',
+            type: '',
+            rank: '',
+            fxLink: ''
+        }],
+        refer: {
+            sources: [''],
+            license: ['']
+        }
+    }
+
+    // 天气信息
+    weatherInfo: WeatherInfo = {
+        code: '',
+        updateTime: '',
+        fxLink: '',
+        now: {
+            obsTime: '',
+            temp: '',
+            feelsLike: '',
+            icon: '',
+            text: '',
+            wind360: '',
+            windDir: '',
+            windScale: '',
+            windSpeed: '',
+            humidity: '',
+            precip: '',
+            pressure: '',
+            vis: '',
+            cloud: '',
+            dew: ''
+        },
+        refer: {
+            sources: [''],
+            license: ['']
+        }
+    }
+
+    /**
+     * 查找城市天气
+     * @param {string} city - 城市
+     * @param {string} adm - 行政区
+     * @param {string} date - 日期
+     */
+    searchWeather(city: string | undefined, adm: string | undefined, date: string | undefined): void {
+        this.citySearchService.getCity(city, adm)
+            .subscribe(cityInfo => {
+                this.cityInfo = cityInfo;
+                this.weatherSearchService.getWeather(this.cityInfo.location[0].id, date)
+                    .subscribe(weatherInfo => {
+                        this.weatherInfo = weatherInfo;
+                    })
+            })
+    }
+
 }

@@ -37,151 +37,150 @@ import * as Zhejiang from "../../assets/js/Zhejiang"
 import * as p from "../../assets/js/pMap"
 
 const Province = [
-    Beijing,
-    Shanghai,
-    Tianjin,
-    Chongqing,
-    Hebei,
-    Shanxi,
-    Liaoning,
-    Jilin,
-    Heilongjiang,
-    Jiangsu,
-    Zhejiang,
-    Anhui,
-    Fujian,
-    Jiangxi,
-    Shandong,
-    Henan,
-    Hubei,
-    Hunan,
-    Guangdong,
-    Hainan,
-    Sichuan,
-    Guizhou,
-    Yunnan,
-    Shaanxi,
-    Gansu,
-    Qinghai,
-    Taiwan,
-    Neimenggu,
-    Guangxi,
-    Xizang,
-    Ningxia,
-    Xinjiang
+  Beijing,
+  Shanghai,
+  Tianjin,
+  Chongqing,
+  Hebei,
+  Shanxi,
+  Liaoning,
+  Jilin,
+  Heilongjiang,
+  Jiangsu,
+  Zhejiang,
+  Anhui,
+  Fujian,
+  Jiangxi,
+  Shandong,
+  Henan,
+  Hubei,
+  Hunan,
+  Guangdong,
+  Hainan,
+  Sichuan,
+  Guizhou,
+  Yunnan,
+  Shaanxi,
+  Gansu,
+  Qinghai,
+  Taiwan,
+  Neimenggu,
+  Guangxi,
+  Xizang,
+  Ningxia,
+  Xinjiang
 ]
 
 @Component({
-    selector: 'app-map',
-    standalone: true,
-    imports: [
-        NgxEchartsModule
-    ],
-    templateUrl: './map.component.html',
-    styleUrl: './map.component.scss'
+  selector: 'app-map',
+  standalone: true,
+  imports: [
+    NgxEchartsModule
+  ],
+  templateUrl: './map.component.html',
+  styleUrl: './map.component.scss'
 })
 export class MapComponent implements OnInit {
-    ngOnInit() {
-        China.init()
-        this.initChart();
-    };
+  ngOnInit() {
+    China.init()
+    this.initChart();
+  };
 
-    back(){
-      const chartDom = document.getElementById('chinaMap');
-      const myChart = echarts.init(chartDom);
-      myChart.getZr().on('click',function (params){
-        if(params.target){
-        }else{
-          myChart.setOption({
-            title: {},
-            tooltip: {},
-            legend: {},
-            geo: {
-              map: 'china',
-              show: true,
-              roam: false,
-              zoom: 1,
-              emphasis: {
-                label: {
-                  show: false
-                }
-              },
-              itemStyle: {
-                areaColor: '#FFDAB9',
-                borderColor: '#FFE4E1',
-                shadowColor: '#FF6A6A',
-                shadowBlur: 10
+  back() {
+    const chartDom = document.getElementById('chinaMap');
+    const myChart = echarts.init(chartDom);
+    myChart.getZr().on('click', function (params) {
+      if (params.target) {
+      } else {
+        myChart.setOption({
+          title: {},
+          tooltip: {},
+          legend: {},
+          geo: {
+            map: 'china',
+            show: true,
+            roam: false,
+            zoom: 1,
+            emphasis: {
+              label: {
+                show: false
               }
             },
-            series: []
-          })
-        }
-      })
-
-
-
-    }
-
-    initChart() {
-        const chartDom = document.getElementById('chinaMap');
-        const myChart = echarts.init(chartDom);
-        let option;
-        option = {
-            title: {},
-            tooltip: {},
-            legend: {},
-            geo: {
-                map: 'china',
-                show: true,
-                roam: false,
-                zoom: 1,
-                emphasis: {
-                    label: {
-                        show: false
-                    }
-                },
-                itemStyle: {
-                    areaColor: '#FFDAB9',
-                    borderColor: '#FFE4E1',
-                    shadowColor: '#FF6A6A',
-                    shadowBlur: 10
-                }
-            },
-            series: []
-        };
-
-        myChart.on('click', function (param) {
-            console.log(param);
-            if (p.pMap.has(param.name)) {
-                // @ts-ignore
-                let index: number = p.pMap.get(param.name);
-                Province[index].init();
-                myChart.setOption({
-                    title: {},
-                    tooltip: {},
-                    legend: {},
-                    geo: {
-                        map: param.name,
-                        show: true,
-                        roam: false,
-                        zoom: 1,
-                        emphasis: {
-                            label: {
-                                show: false
-                            }
-                        },
-                        itemStyle: {
-                            areaColor: '#FFDAB9',
-                            borderColor: '#FFE4E1',
-                            shadowColor: '#FF6A6A',
-                            shadowBlur: 10
-                        }
-                    },
-                    series: []
-                })
+            itemStyle: {
+              areaColor: '#FFDAB9',
+              borderColor: '#FFE4E1',
+              shadowColor: '#FF6A6A',
+              shadowBlur: 10
             }
+          },
+          series: []
+        })
+      }
+    })
 
-        });
-        myChart.setOption(option);
-    }
+
+  }
+
+  initChart() {
+    const chartDom = document.getElementById('chinaMap');
+    const myChart = echarts.init(chartDom);
+    let option;
+    option = {
+      title: {},
+      tooltip: {},
+      legend: {},
+      geo: {
+        map: 'china',
+        show: true,
+        roam: false,
+        zoom: 1,
+        emphasis: {
+          label: {
+            show: false
+          }
+        },
+        itemStyle: {
+          areaColor: '#FFDAB9',
+          borderColor: '#FFE4E1',
+          shadowColor: '#FF6A6A',
+          shadowBlur: 10
+        }
+      },
+      series: []
+    };
+
+    myChart.on('click', function (param) {
+      console.log(param);
+      if (p.pMap.has(param.name)) {
+        // @ts-ignore
+        let index: number = p.pMap.get(param.name);
+        Province[index].init();
+        myChart.setOption({
+          title: {},
+          tooltip: {},
+          legend: {},
+          geo: {
+            map: param.name,
+            show: true,
+            roam: false,
+            zoom: 1,
+            emphasis: {
+              label: {
+                show: false
+              }
+            },
+            itemStyle: {
+              areaColor: '#FFDAB9',
+              borderColor: '#FFE4E1',
+              shadowColor: '#FF6A6A',
+              shadowBlur: 10
+            }
+          },
+          series: []
+        })
+      }
+
+    });
+    myChart.setOption(option);
+  }
 }

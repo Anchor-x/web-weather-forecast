@@ -32,10 +32,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/echarts/dist/echarts.js",
-              "src/assets/china.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

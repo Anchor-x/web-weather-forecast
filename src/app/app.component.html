@@ -1,12 +1,15 @@
 <div class="w-screen h-screen bg-gradient-to-tr from-amber-400 to-fuchsia-300
 flex flex-col">
-    <div class="h-fit text-6xl font-extrabold text-transparent text-center bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text stroke-white stroke-2 m-8">
-        Hello, Weather.
+  <div class="flex h-screen justify-center">
+    <app-block class="w-1/4 h-screen"></app-block>
+    <div class="w-1/2 flex flex-col">
+      <div class="h-fit text-6xl font-extrabold text-transparent text-center bg-gradient-to-r from-red-500 to-yellow-500
+bg-clip-text stroke-white stroke-2 m-8">Hello, Weather.
+      </div>
+      <app-map class="flex-grow"></app-map>
     </div>
-
-    <div class="flex flex-grow h-fit justify-center">
-        <app-map></app-map>
-    </div>
+    <app-block class="w-1/4 h-screen"></app-block>
+  </div>
 
     <div>
         <app-weather-search></app-weather-search>

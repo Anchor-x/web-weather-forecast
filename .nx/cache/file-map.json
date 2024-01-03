@@ -116,7 +116,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "1490900958471093078"
+          "hash": "12572357778305512879"
         },
         {
           "file": "src/app/app.component.scss",
@@ -131,7 +131,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "14010351837181657898",
+          "hash": "9097654599047937767",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -155,8 +155,30 @@
           ]
         },
         {
+          "file": "src/app/block/block.component.html",
+          "hash": "1019541945306552722"
+        },
+        {
+          "file": "src/app/block/block.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/block/block.component.spec.ts",
+          "hash": "4945539360780736989",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/block/block.component.ts",
+          "hash": "8394002788495521931",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/map/map.component.html",
-          "hash": "10764252526559000522"
+          "hash": "9956555987299352685"
         },
         {
           "file": "src/app/map/map.component.scss",
@@ -171,7 +193,7 @@
         },
         {
           "file": "src/app/map/map.component.ts",
-          "hash": "13017537802764184612",
+          "hash": "17805840858993474493",
           "deps": [
             "npm:@angular/core",
             "npm:ngx-echarts",
@@ -414,6 +436,14 @@
           ]
         },
         {
+          "file": "src/assets/js/index.js",
+          "hash": "7261729770673511662"
+        },
+        {
+          "file": "src/assets/js/jquery.js",
+          "hash": "2581893772548422614"
+        },
+        {
           "file": "src/assets/js/pMap.ts",
           "hash": "10264492306436413017"
         },
@@ -424,6 +454,10 @@
         {
           "file": "src/index.html",
           "hash": "11526772966656318697"
+        },
+        {
+          "file": "src/input.css",
+          "hash": "2866083945719690482"
         },
         {
           "file": "src/main.ts",

@@ -5,13 +5,13 @@ import { WeatherInfo } from "../../models/weather-info.model";
 import { WeatherSearchService } from "../../services/weather-search.service";
 
 @Component({
-    selector: 'app-block',
+    selector: 'app-block2',
     standalone: true,
     imports: [],
-    templateUrl: './block.component.html',
-    styleUrl: './block.component.scss'
+    templateUrl: './block2.component.html',
+    styleUrl: './block2.component.scss'
 })
-export class BlockComponent implements OnInit {
+export class Block2Component implements OnInit {
     constructor(private citySearchService: CitySearchService,
                 private weatherSearchService: WeatherSearchService) {
     }

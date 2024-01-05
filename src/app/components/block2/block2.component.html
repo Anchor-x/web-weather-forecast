@@ -1,4 +1,4 @@
-<div class="h-full p-4" (click)="searchWeather(city,adm,'now')">
+<div class="h-full p-4" (click)="this.httpService.searchWeather(city,adm,'now')">
     <div class="h-1/2 m-1 border rounded-3xl shadow-lg bg-transparent flex flex-col">
         <h1 class="text-2xl font-extrabold text-transparent text-center bg-gradient-to-r from-pink-800 to-red-500 bg-clip-text stroke-white stroke-2 m-2">
             Atmospheric Pressure
@@ -6,7 +6,7 @@
         <div class="flex flex-grow items-center justify-center">
             <div class="h-fit text-4xl font-extrabold text-transparent text-center
             bg-gradient-to-r from-pink-800 to-red-500 bg-clip-text stroke-white stroke-2 m-2">
-                {{weatherInfo.now.pressure}}hPa
+                {{ httpService.weatherInfo.now.pressure }}hPa
             </div>
         </div>
     </div>
@@ -18,9 +18,9 @@
             <div class="h-fit text-2xl font-extrabold text-transparent text-left
             bg-gradient-to-r from-pink-800 to-red-500 bg-clip-text
             stroke-white stroke-2 m-2">
-                <p>Direction:{{weatherInfo.now.windDir}}</p>
-                <p>Scale:{{weatherInfo.now.windScale}}</p>
-                <p>Speed:{{weatherInfo.now.windSpeed}}km/h</p>
+                <p>Direction:{{ httpService.weatherInfo.now.windDir }}</p>
+                <p>Scale:{{ httpService.weatherInfo.now.windScale }}</p>
+                <p>Speed:{{ httpService.weatherInfo.now.windSpeed }}km/h</p>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-import {registerMap} from "echarts";
+import { registerMap } from "echarts";
 
 export function init() {
   registerMap('重庆市', {
